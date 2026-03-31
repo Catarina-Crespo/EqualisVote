@@ -39,9 +39,13 @@
 └── README.md
 ```
 
-## Server
+## Main Server
 
 The Tomcat server is available at the `/server` folder. You can run it and access it at `http://localhost:8080/server_war`, and a "Hello World!" message should be displayed on the browser if you try to access the URL above
+
+## Third-party
+
+The Third-party Server is available in the `/elections-server` folder. To run it, type `npm run start` in the terminal. It'll be accessible at `http://localhost:5000`.
 
 ## Client App
 
@@ -56,8 +60,10 @@ To run the simulations on the client folder:
 
 To run the simulation **first run app.js in the terminal** (`npm run start`), since the simulations will use the middleware provided by it and then open another terminal to run the simulation itself
 
+The interface of the client app is available by running `npm run dev` and going to `http://localhost:5173/`
 
-# Benchmark
+
+## Benchmark
 
 To obtain the results:
 
