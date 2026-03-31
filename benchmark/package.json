@@ -1,0 +1,25 @@
+{
+  "name": "thesis",
+  "version": "1.0.0",
+  "description": "```\r ├── client/\r │   ├── binariesWeb/                # .js and .wasm files compiled from the c++ protocol with emscripten (for Web)\r │   ├── binaries/                   # .js and .wasm files compiled from the c++ protocol with emscripten (for Node.js)\r │   ├── public/                     # Javascript, CSS and HTML\r │   ├── app.js                      # Node.js client app (starting point) with the HTTP requests\r │   ├── simulateClients.js          # Simulation with 5 clients\r │   └── simulateNClients.js         # Simulation with a variable number of clients\r │\r ├── protocol/\r │   └── src/ \r │       ├── modules/                # Folder with the protocol modules (create_user, create_group, ...)\r │       └── protocol_run.cpp        # File with the protocol\r │\r └── server/\r │   └── src/\r │       └── main/\r │           ├── binaries/           # C++ binaries generated from the protocol\r │           ├── java/\r │           │   └── com.example/    # Java classes with the servlet code (actual server logic)\r │           ├── test/               # JUnit tests for the servlets\r │           └── webapp/             # Required files for Tomcat deployment\r └── README.md\r ```",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Catarina-Crespo/thesis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Catarina-Crespo/thesis/issues"
+  },
+  "homepage": "https://github.com/Catarina-Crespo/thesis#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.1"
+  },
+  "dependencies": {
+    "pidusage": "^4.0.1"
+  }
+}

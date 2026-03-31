@@ -1,0 +1,4 @@
+.container_run
+/.idea
+cmake-build-*
+wasm/build
